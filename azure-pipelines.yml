@@ -21,6 +21,12 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: SonarQubePreBuild@1
+  inputs:
+    projectKey: 'sv'
+    projectName: 'CBRE'
+    projectVersion: '1.0'
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
