@@ -5,7 +5,8 @@
 
 trigger:
 - master
-- dev/*
+- dev
+- bugfix/*
 
 pool:
   vmImage: 'windows-latest'
