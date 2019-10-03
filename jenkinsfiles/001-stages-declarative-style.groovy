@@ -1,4 +1,4 @@
-T##########################This script is managed by CBRE DevOps Team##########################
+//##########################This script is managed by CBRE DevOps Team##########################
 pipeline {
   agent any
   stages {
