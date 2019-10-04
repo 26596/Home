@@ -30,9 +30,9 @@ pipeline {
         always {
             echo 'I will always say Hello again!'
             
-                emailtext body: "${DEFAULT_CONTENT}",
-                recipientProviders: "${DEFAULT_RECIPIENTS}",
-                subject: "${DEFAULT_SUBJECT}"
+                emailtext body: "TEST",
+                recipientProviders: "jagannath.singh@indecomm.net",
+                subject: "TEST"
 				
             
         }
