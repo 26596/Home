@@ -30,10 +30,9 @@ pipeline {
         always {
             echo 'I will always say Hello again!'
             
-                emailext body: "TEST",
-                emailextrecipients: "jagannath.singh@indecomm.net",
-                subject: "TEST"
-				
+                emailext body: "${DEFAULT_CONTENT}",
+                recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
+                subject: "${DEFAULT_SUBJECT}"
             
         }
     }
