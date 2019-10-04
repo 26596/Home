@@ -30,10 +30,10 @@ pipeline {
         always {
             echo 'I will always say Hello again!'
             
-            emailtext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
-                //recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
-				recipientProviders: 'jagannath.singh@indecomm.net', 'er.aparajit@gmail.com'
-                subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
+                emailtext body: "${DEFAULT_CONTENT}",
+                recipientProviders: "${DEFAULT_RECIPIENTS}",
+                subject: "${DEFAULT_SUBJECT}"
+				
             
         }
     }
