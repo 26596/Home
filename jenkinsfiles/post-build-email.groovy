@@ -19,8 +19,6 @@ post {
 				
          
         }
-		success {
-      mail to: jagannath.singh@indecomm.net,er.aparajit@gmail.com, subject: ‘The Pipeline success :(‘
+	
     }
     }
-}
