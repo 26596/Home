@@ -31,7 +31,7 @@ pipeline {
             echo 'I will always say Hello again!'
             
                 emailext body: "TEST",
-                recipientProviders: "jagannath.singh@indecomm.net",
+                emailextrecipients: "jagannath.singh@indecomm.net",
                 subject: "TEST"
 				
             
